@@ -17,8 +17,13 @@ namespace CsvSerializer
             IEnumerable<PropertyInfo> ps = FilterProperty(t);
             foreach (var p in ps)
             {
-                var v = p.GetValue(obj).ToString();
-                r.Add(v);
+                var b = p.PropertyType.GetProperties();
+                if (null == null)
+                {
+                    var v = p.GetValue(obj).ToString();
+                    r.Add(v);
+                }
+                
             }
             return string.Join(",", r);
         }

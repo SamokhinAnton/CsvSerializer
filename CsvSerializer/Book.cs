@@ -18,5 +18,7 @@ namespace CsvSerializer
         public string Title { get; set; }
         [CsvOrder(3)]
         public decimal Price { get; set; }
+
+        public IEnumerable<int> Ints { get; set; }
     }
 }

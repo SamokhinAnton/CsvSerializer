@@ -16,7 +16,8 @@ namespace CsvSerializer
                 Created = DateTime.Now,
                 Price = 15.5m,
                 Title = "Homeland",
-                Year = 1990
+                Year = 1990,
+                Ints = new List<int>() { 1,2,3,4}
             };
             var book2 = new Book
             {
@@ -24,7 +25,8 @@ namespace CsvSerializer
                 Created = DateTime.Now.AddDays(-10),
                 Price = 17.5m,
                 Title = "Sojourn",
-                Year = 1991
+                Year = 1991,
+                Ints = new List<int>() { 1, 2, 3, 4 }
             };
             var list = new List<Book>();
             list.Add(book);
